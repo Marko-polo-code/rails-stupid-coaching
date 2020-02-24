@@ -1,0 +1,19 @@
+ <div class="body">
+
+   <div class="header center-aligned">
+      <h1>Your question</h1>
+   </div>
+
+    <div class="container center-aligned">
+      <form action="/answer">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+        <div class="input-text">
+          <input class="input" type="text" name="question">
+          <input class="button" type="submit" value="submit">
+        </div>
+      </form>
+    </div>
+
+ </div>
+
